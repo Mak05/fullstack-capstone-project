@@ -22,12 +22,22 @@ function LoginPage() {
         }
     };
 
-    return (
-        <form onSubmit={handleLogin}>
-            <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
-            <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
-            <button type="submit">Login</button>
-        </form>
+    return React.createElement(
+        'form',
+        { onSubmit: handleLogin },
+        React.createElement('input', {
+            type: 'email',
+            placeholder: 'Email',
+            onChange: (e) => setEmail(e.target.value),
+            required: true
+        }),
+        React.createElement('input', {
+            type: 'password',
+            placeholder: 'Password',
+            onChange: (e) => setPassword(e.target.value),
+            required: true
+        }),
+        React.createElement('button', { type: 'submit' }, 'Login')
     );
 }
 

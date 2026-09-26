@@ -23,14 +23,34 @@ function RegisterPage() {
         }
     };
 
-    return (
-        <form onSubmit={handleRegister}>
-            <input type="text" placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} required />
-            <input type="text" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} required />
-            <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
-            <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
-            <button type="submit">Register</button>
-        </form>
+    return React.createElement(
+        'form',
+        { onSubmit: handleRegister },
+        React.createElement('input', {
+            type: 'text',
+            placeholder: 'First Name',
+            onChange: (e) => setFirstName(e.target.value),
+            required: true
+        }),
+        React.createElement('input', {
+            type: 'text',
+            placeholder: 'Last Name',
+            onChange: (e) => setLastName(e.target.value),
+            required: true
+        }),
+        React.createElement('input', {
+            type: 'email',
+            placeholder: 'Email',
+            onChange: (e) => setEmail(e.target.value),
+            required: true
+        }),
+        React.createElement('input', {
+            type: 'password',
+            placeholder: 'Password',
+            onChange: (e) => setPassword(e.target.value),
+            required: true
+        }),
+        React.createElement('button', { type: 'submit' }, 'Register')
     );
 }
 
