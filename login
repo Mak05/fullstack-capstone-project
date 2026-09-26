@@ -1,0 +1,1 @@
+{"authtoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbW9AZ2lmdGxpbmsuY29tIiwiaWF0IjoxNzkwNDE1NjkwLCJleHAiOjE3OTA0MTkyOTB9.tYYfpqrYjPMCWufGpOghRok_fPuKHa4cysePELfh4FM","email":"demo@giftlink.com","user":{"firstName":"Demo","lastName":"User","email":"demo@giftlink.com"}}
